@@ -1,0 +1,128 @@
+/*
+
+#3c3c3c rgb(60, 60, 60) dark grey
+#838988 rgb(131, 137, 136) light grey
+#fff0e9 rgb(255, 240, 233) white
+#897e79 rgb(137, 126, 121) brownish
+#293c3a rgb(41, 60, 58) dark green
+
+#999 rgb(153, 153, 153) greyish
+
+#242e4d rgb(36, 46, 77) dark grey
+#897e79 rgb(137, 126, 121) brownish
+#999 rgb(153, 153, 153) greyish
+#faebd7 rgb(250, 235, 215) creme
+#ffcc99 rgb(255, 204, 153) skin
+#ffcccc rgb(255, 204, 204) pinkish
+#ffffff (255, 255, 255) white
+*/
+
+html, body { height: 100%; }
+
+body {
+    background: linear-gradient(180deg,
+        #242e4d,
+        #897e79);
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 0 3px 3px 3px;
+    border-top: 2px solid #838988;
+    height: 380px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.form-container {
+    margin: 0 auto;
+    margin-top: 5em;
+    width: 80%;
+}
+
+input {
+    border: none;
+    border-radius: 3px;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    padding-left: 10px;
+    width: 90%;
+}
+
+:focus {
+    outline-color: #838988;
+}
+
+input:nth-of-type(1) {
+    margin-top: 5em;
+    padding-left: 15px;
+}
+
+input:nth-of-type(3) {
+    background: linear-gradient(to left,
+        rgba(127, 116, 111, .7),
+        rgb(137, 126, 121));
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    width: 93%;
+}
+
+input:nth-of-type(3):hover {
+    background: linear-gradient(to left,
+        rgb(131, 136, 137),
+        rgb(101, 106, 107));
+    cursor: pointer;*/
+    color: #fff;
+    font-weight: 300;
+}
+
+input::placeholder { font-family: Helvetica, sans-serif; }
+
+a {
+    color: #fff0e9;
+    text-decoration: none;
+}
+
+a:hover { color: #3c3c3c; }
+
+span {
+    color: #fff0e9;
+    font-size: 25px;
+}
+
+span:hover {
+    color: #3c3c3c;
+    cursor: pointer;
+}
+
+#close {
+    float: right;
+    margin: 10px;
+}
+
+@media all and (max-width: 1199px) {
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media all and (max-width: 768px) {
+    form {
+        width: 70%;
+}
+
+@media all and (max-width: 575px) {
+    form {
+        width: 90%;
+    }
+}
