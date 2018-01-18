@@ -1,21 +1,11 @@
-/*
+/************************************************
+Keith Hough 2018
 
+#897e79 rgb(137, 126, 121) brownish
 #3c3c3c rgb(60, 60, 60) dark grey
 #838988 rgb(131, 137, 136) light grey
 #fff0e9 rgb(255, 240, 233) white
-#897e79 rgb(137, 126, 121) brownish
-#293c3a rgb(41, 60, 58) dark green
-
-#999 rgb(153, 153, 153) greyish
-
-#242e4d rgb(36, 46, 77) dark grey
-#897e79 rgb(137, 126, 121) brownish
-#999 rgb(153, 153, 153) greyish
-#faebd7 rgb(250, 235, 215) creme
-#ffcc99 rgb(255, 204, 153) skin
-#ffcccc rgb(255, 204, 204) pinkish
-#ffffff (255, 255, 255) white
-*/
+*************************************************/
 
 html, body { height: 100%; }
 
@@ -93,7 +83,7 @@ a {
     text-decoration: none;
 }
 
-a:hover { color: #3c3c3c; }
+a:hover { text-decoration: underline; }
 
 span {
     color: #fff0e9;
@@ -110,19 +100,14 @@ span:hover {
     margin: 10px;
 }
 
-@media all and (max-width: 1199px) {
+#close:hover a {
+    text-decoration: none;
 }
 
-@media all and (max-width: 991px) {
-}
+/************************************************
+MEDIA QUERIES
+************************************************/
 
-@media all and (max-width: 768px) {
-    form {
-        width: 70%;
-}
+@media all and (max-width: 768px) { form { width: 70%; } }
 
-@media all and (max-width: 575px) {
-    form {
-        width: 90%;
-    }
-}
+@media all and (max-width: 575px) { form { width: 90%; } }
